@@ -1,0 +1,86 @@
+<html>
+    <head>
+        <style>
+            .wrapper,html,body{
+                height: 100%;
+                margin: 0;
+            }
+            .flex-container{
+                display: flex;
+                background-color:#5596e6;
+            }
+            #level_01_box,#level_02_box,#level_03_box,#level_04_box{
+                background-color:azure;
+                opacity: 80%; 
+                margin: 10px;
+                font-size: 30px;
+                text-align: center;
+                color: blue;
+                
+
+            }
+            #left-corner{
+                background-color:rebeccapurple;
+                min-height: 100%;
+                flex-direction:column
+            }
+            #top_bar{
+                min-height: 20%;
+            }
+            #bottom_bar{
+                min-height: 80%;
+            }
+            #left_corner_bottom_bar_parent{
+                min-width: 18%;
+                background-color:white; 
+                margin: 0px;
+                font-size: 30px;
+            }
+            #right_corner_bottom_bar_parent{
+                min-width: 82%; 
+                margin: 0px;
+                font-size: 30px;
+                background-color: red;
+            }
+            #level1,level11{
+                margin: 10px;
+                background-color: aqua;
+            }
+            
+        </style>
+    </head>
+    <body>
+    <div class = "flex-container" id = "top_bar">
+        <div style="flex-grow: 10;background-color:#3d70b2;padding: 5px;max-height: 150px">
+            <p style ="text-align: center;font-size: 35; color: white; font-family: TImes New Roman"><b>WELCOME TO MCQs</b></p>
+        </div>
+    </div>
+    <div class = "flex-container" id = "bottom_bar" >
+        <div id ="left_corner_bottom_bar_parent">
+            <div id ="left-corner" class = "flex-container">
+                <div id = "level_01_box" >
+                    Level 1
+                </div>
+                <div id = "level_02_box"> 
+                    Level 2
+                </div>
+                <div id = "level_03_box"> 
+                    Level 3
+                </div>
+                <div id = "level_04_box"> 
+                    Level 4
+                </div>
+            </div>
+        </div>
+        <div id = "right_corner_bottom_bar_parent">
+        </div>
+    </div>
+    <script>
+    document.getElementById("level_01_box").addEventListener("click", function(){
+        document.getElementById("right_corner_bottom_bar_parent").innerHTML = `<div id = "level1">1</div><div id = "level11">2</div>`;
+    });    
+    </script>
+    
+    </body>
+
+</html>
