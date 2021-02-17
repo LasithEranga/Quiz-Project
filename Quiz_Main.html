@@ -1,22 +1,22 @@
 <html>
-
     <head>
-    
     </head>
+    
     <body>
+    <h1>Quizes</h1>
     <div id = "quiz"></div>
     <button id = "submit">Submit Quiz</button>
     <div id = "results"></div>
+        <script src="./Data2.js"></script>
         <script src ='./Functions.js'></script>
        <script>
         const quizContainer = document.getElementById('quiz');   
         const resultsContainer = document.getElementById('results');
         const submitButton = document.getElementById('submit');
-        buildQuiz();
+        buildQuiz(myQuestions);
         submitButton.addEventListener('click',showResults);
     </script>
- 
-    
+
     </body>
     
 </html>
