@@ -5,7 +5,7 @@
     <body>
     <div class = "flex-container" id = "top_bar">
         <div style="min-width: 18%;background-color:azure;max-height: 150px">
-            <img src="logo.png" width="200px" height="150px" style = "padding-left: 25px; padding-bottom: 10px">
+            <a href="HomePage.html"><img src="logo.png" width="200px" height="150px" style = "padding-left: 25px; padding-bottom: 10px"></a>
         </div>
         <div style="min-width: 82%;background-color:#3d70b2;max-height: 150px">
             <p style ="text-align: center;font-size: 35; color: white; font-family: TImes New Roman"><b>WELCOME TO MCQs</b></p>
@@ -29,43 +29,15 @@
             </div>
         </div>
         <div id = "right_corner_bottom_bar_parent">
+            <img id = "homepage" src="homeIMG.jpg">
         </div>
     </div>
+    <script src="./subList.js">
+    </script>
+    <script src="./GraphicUpdates.js">
+    </script>
     <script>
-    level1List = ["hello","this is Level1"];
-    level2List = ["hello","this is Level2","hello","this is Level2","hello","this is Level2","hello","this is Level2","hello","this is Level2","hello","this is Level2","hello","this is Level2","hello","this is Level2"];
-    level3List = ["hello","this is Level3","hello","this is Level3","hello","this is Level3","hello","this is Level3"];
-    level4List = ["hello","this is Level4","hello","this is Level4","hello","this is Level4","hello","this is Level4"];
-    function setSiteDetails(level){
-        var elements = [];
-        switch(level){
-            case 1:
-                elements = level1List;
-                break;
-            case 2:
-                elements = level2List;
-                break;
-            case 3:
-                elements = level3List;
-                break;
-            case 4:
-                elements = level4List;
-                break;
-                
-        }
-        return function(){
-        var output = [];
-        output.push(`<div id="siteDetails" class = "flex-container">`);
-        elements.forEach(
-            item=>{
-            output.push(`<div id = "items">
-                        ${item}
-                        </div>`);
-        });
-        output.push(`</div>`);
-        document.getElementById("right_corner_bottom_bar_parent").innerHTML = output.join('');
-    }
-    }
+    
     document.getElementById("level_01_box").addEventListener("click", setSiteDetails(1));  
     document.getElementById("level_02_box").addEventListener("click", setSiteDetails(2));
     document.getElementById("level_03_box").addEventListener("click", setSiteDetails(3));  
