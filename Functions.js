@@ -1,3 +1,4 @@
+//contains functions related to mcq processing 
 function buildQuiz(myQuestions) {
     const output = [];
     myQuestions.forEach(
@@ -47,5 +48,4 @@ function showResults() {
     }
   });
   resultsContainer.innerHTML = `${numCorrect} out of ${myQuestions.length}`;
-  alert("Reset");
 }

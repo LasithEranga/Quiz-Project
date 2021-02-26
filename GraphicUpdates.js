@@ -20,7 +20,7 @@ function colorUpdate(item){
         document.getElementById("level_04_box").style.backgroundColor = "azure";
         document.getElementById(Item).style.backgroundColor = "lightblue";
     }
-    function setSiteDetails(level){
+function setSiteDetails(level){
         var elements = [];
         switch(level){
             case 1:

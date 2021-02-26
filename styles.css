@@ -21,7 +21,8 @@
     flex-direction:column
 }
 #top_bar{
-    min-height: 20%;
+    min-height: 150px;
+    min-width: 100%;
 }
 #bottom_bar{
     min-height: 80%;
@@ -36,6 +37,7 @@
 }
 #right_corner_bottom_bar_parent{
     min-width: 82%; 
+    max-width: 82%;
     margin: 0px;
     font-size: 30px;
     background-color: white;
@@ -61,6 +63,7 @@ a:link{
 }
 #homepage{
     max-height:100%;
+    max-width: 150px;
     min-width: 100%;
-    
+    margin: 0 auto;
 }
