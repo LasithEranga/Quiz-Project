@@ -44,14 +44,16 @@
 }
 #items{
     min-height: 100px;
+	max-height: 100px;
     min-width: 300px;
     margin: 10px;
     background-color: aqua;
-    text-align: left;
+    text-align: center;
+	
     
 }
 #siteDetails{
-    padding: 20px;
+    padding-left: 20px;
     flex-wrap: wrap;
     margin: 10px;
     text-align: center;

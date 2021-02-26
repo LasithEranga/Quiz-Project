@@ -17,12 +17,22 @@ level1List = [`<a href = 'Quiz_Main.html'>
         
 level2List = [`<a href = 'L2/OOP/OOP.html'>
                     <div id = 'items'>
-                        Object Oriented Programming
+                        Object Oriented Programming</br>
                     </div>
                    </a>
                    <a href = 'L2/DBMS/DBMS.html'>
                     <div id = 'items'>
                         Database Design
+                    </div>
+                   </a>
+					<a href = 'L2/Accounting/Accounting.html'>
+                    <div id = 'items'>
+                        Accounting 
+                    </div>
+                   </a>
+				   <a href = 'L2/DataStructures/DataStructures.html'>
+                    <div id = 'items'>
+                        Data Structures
                     </div>
                    </a>`];
         
