@@ -14,11 +14,11 @@ function colorUpdate(item){
                 Item = "level_04_box";
                 break;        
         }
-        document.getElementById("level_01_box").style.backgroundColor = "azure";
-        document.getElementById("level_02_box").style.backgroundColor = "azure";
-        document.getElementById("level_03_box").style.backgroundColor = "azure";
-        document.getElementById("level_04_box").style.backgroundColor = "azure";
-        document.getElementById(Item).style.backgroundColor = "lightblue";
+        document.getElementById("level_01_box").style.backgroundColor = "#333129";
+        document.getElementById("level_02_box").style.backgroundColor = "#333129";
+        document.getElementById("level_03_box").style.backgroundColor = "#333129";
+        document.getElementById("level_04_box").style.backgroundColor = "#333129";
+        document.getElementById(Item).style.backgroundColor = "#333132";
     }
 function setSiteDetails(level){
         var elements = [];
@@ -39,6 +39,7 @@ function setSiteDetails(level){
         }
         return function(){
         var output = [];
+  		document.getElementById("right_corner_bottom_bar_parent").outerHTML = `<div id ="right_corner_bottom_bar_parent"></div>`;
         output.push(`<div id="siteDetails" class = "flex-container">`);
         elements.forEach(
             item=>{
